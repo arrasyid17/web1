@@ -1,4 +1,4 @@
-name: Deploy to Oracle Cloud
+name: Deploy to Oracle Cloud (Web1)
 
 on:
   push:
@@ -22,4 +22,4 @@ jobs:
             cd /var/www/web1.com/public_html
             sudo git pull origin main
             sudo systemctl reload nginx
-            sudo systemctl restart php8.3-fpm
+            sudo systemctl restart php8.1-fpm
